@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>2年B組 クラスサイト</title>
+<meta name="description" content="静岡大学教育学部附属静岡中学校 2年B組のクラスサイト。今日の予定・持ち物・テスト範囲・FAQ・意見箱がひとつにまとまっています。" />
+
+<!-- ============================================================
+     🛠 更新する人へ / How to update
+     ------------------------------------------------------------
+     このサイトの内容は、ほぼ全部この <script id="site-data"> の
+     中の JSON を書き換えるだけで更新できます。
+     HTML の他の部分は基本さわらなくてOKです。
+
+     ・today       … 今日の時間割・持ち物・提出物
+     ・thisWeek    … 今週の予定サマリー
+     ・deadlines   … 直近の締切（日付+タイトル+補足）
+     ・schedule    … 2B予定（画像URL or テキスト）
+     ・gakkatsu    … 学活の時間を使いたい人一覧
+     ・upcoming    … 今後の予定
+     ・tests       … テスト範囲（教科ごと）
+     ・faqs        … 質問フォーム回答（FAQ）
+     ・forms       … 各フォームのURL
+     ・others      … 目標カレンダー等その他リンク
+     ・updates     … 更新履歴
+     ============================================================ -->
+<script type="application/json" id="site-data">
+{
+  "meta": {
+    "className": "2年B組",
+    "schoolName": "静岡大学教育学部附属静岡中学校",
+    "version": "Ver.2.0.0",
+    "updatedAt": "2026-08-11",
+    "todayLabel": "8月11日（火）"
+  },
+  "today": {
+    "note": "夏休み中は時間割はお休みモードです。9月1日に更新します。",
+    "period": [
+      { "n": 1, "subject": "—", "room": "" },
+      { "n": 2, "subject": "—", "room": "" },
+      { "n": 3, "subject": "—", "room": "" },
+      { "n": 4, "subject": "—", "room": "" },
+      { "n": 5, "subject": "—", "room": "" },
+      { "n": 6, "subject": "—", "room": "" }
+    ],
+    "bring": [],
+    "submit": []
+  },
+  "thisWeek": {
+    "range": "8/11(火)〜8/17(月)",
+    "highlights": [
+      "夏休み後半・宿題ラストスパート週",
+      "8/17(月)は登校日（午前中のみ）",
+      "REBORN NOTE の提出は登校日まで"
+    ]
+  },
+  "deadlines": [
+    { "date": "2026-08-17", "title": "REBORN NOTE 提出", "note": "登校日に回収" },
+    { "date": "2026-08-17", "title": "夏休みの課題 一式", "note": "国・数・英・理・社" },
+    { "date": "2026-08-25", "title": "自由研究 提出", "note": "作品もあわせて" }
+  ],
+  "schedule": {
+    "images": [
+      { "src": "", "caption": "8月 2B予定表（画像はここに差し替え）" }
+    ],
+    "summary": [
+      { "date": "8/11(火)", "text": "夏季休業中" },
+      { "date": "8/17(月)", "text": "登校日 / 課題回収 / 学活" },
+      { "date": "8/25(火)", "text": "自由研究提出締切" },
+      { "date": "9/1(月)",  "text": "始業式 / 実力テスト" }
+    ]
+  },
+  "gakkatsu": [
+    { "name": "選挙管理委員会", "purpose": "後期委員長選挙の告知", "when": "9月第1週", "minutes": 10 },
+    { "name": "文化祭実行委員", "purpose": "クラス出し物の相談", "when": "9月第2週", "minutes": 20 }
+  ],
+  "upcoming": [
+    { "date": "9/1(月)",  "title": "始業式・実力テスト" },
+    { "date": "9/7(月)",  "title": "文化祭 クラス企画決定" },
+    { "date": "9/14(月)", "title": "後期委員長選挙" },
+    { "date": "10/17(金)〜18(土)", "title": "文化祭本番" }
+  ],
+  "tests": {
+    "name": "前期末テスト範囲",
+    "period": "2026/9/24(木)〜9/26(土)",
+    "subjects": [
+      { "subject": "国語", "teacher": "—", "range": "教科書 p.42〜p.98 / 漢字ワーク 3〜5章 / 配布プリント全て", "tip": "文法の助動詞は要チェック" },
+      { "subject": "数学", "teacher": "—", "range": "1次関数〜連立方程式の利用まで / ワーク p.30〜p.72", "tip": "文章題を最低3周" },
+      { "subject": "英語", "teacher": "—", "range": "Unit 3〜Unit 5 / 単語帳 p.10〜p.28", "tip": "不規則動詞の過去形を覚える" },
+      { "subject": "理科", "teacher": "—", "range": "化学変化と原子分子 / 生物のからだのつくり", "tip": "化学反応式を書けるように" },
+      { "subject": "社会", "teacher": "—", "range": "歴史:江戸〜明治 / 地理:日本の諸地域(北海道〜近畿)", "tip": "年号は語呂で覚える" },
+      { "subject": "保体", "teacher": "—", "range": "配布プリント / 応急手当の章", "tip": "" },
+      { "subject": "技家", "teacher": "—", "range": "家庭:食生活 / 技術:製図の基礎", "tip": "" },
+      { "subject": "音楽", "teacher": "—", "range": "夏の曲・鑑賞ノート", "tip": "" }
+    ]
+  },
+  "faqs": [
+    { "category": "サイト", "q": "このサイトはClassroomと何が違うの？", "a": "Classroomは連絡・課題配布用。このサイトは『今日/今週の予定』『テスト範囲』『みんなの質問と答え』『意見・要望を送る場所』をまとめた場所です。開けば必要な情報がすぐ見つかります。" },
+    { "category": "サイト", "q": "スマホでも見られる？", "a": "はい。下のタブから予定・テスト・FAQ・送るにすぐ移動できます。" },
+    { "category": "予定", "q": "学活の時間を使いたいときは？", "a": "『予定 → 学活の時間を使いたい人』を確認して、被らなければ担当に声をかけてください。使いたい場合は『送る → 新機能／申請』からでもOK。" },
+    { "category": "予定", "q": "予定表が更新されない", "a": "運営メンバーに『意見箱』から連絡してください。原則、日曜夜〜月曜朝に翌週分を更新します。" },
+    { "category": "テスト", "q": "テスト範囲はいつ確定する？", "a": "テスト2週間前を目安に、教科ごとに順次更新します。" },
+    { "category": "テスト", "q": "範囲がまだ『—』の教科がある", "a": "先生からの発表待ちです。分かり次第このサイトに載せます。" },
+    { "category": "行事", "q": "文化祭の役割はどこで見られる？", "a": "9月に入ったら『今後の予定』と『その他』に文化祭ページを追加します。" },
+    { "category": "その他", "q": "サイトを直したい / 機能追加してほしい", "a": "『送る → 新機能募集』からアイデアを送ってください。運営メンバーで検討して、次のバージョンで反映します。" }
+  ],
+  "forms": {
+    "opinion":   { "title": "意見箱",     "when": "サイトやクラスへの意見・要望を伝えたいとき", "url": "#" },
+    "question":  { "title": "質問フォーム", "when": "分からないこと・確認したいことを聞きたいとき（回答はFAQに載ります）", "url": "#" },
+    "feature":   { "title": "新機能募集",  "when": "サイトに欲しい機能・改善アイデアを送りたいとき", "url": "#" }
+  },
+  "others": [
+    { "title": "目標カレンダー",     "desc": "クラス・個人の目標を書き込むカレンダー", "url": "#" },
+    { "title": "選挙管理委員会ポータル", "desc": "後期委員長選挙の告知・候補者情報",       "url": "#" },
+    { "title": "サイトポリシー",     "desc": "このサイトの使い方・書き込みルール",   "url": "#site-policy" }
+  ],
+  "policy": [
+    "このサイトは 2年B組 のクラスサイトです。掲載情報は運営メンバーが管理しています。",
+    "個人が特定される情報（フルネーム・住所・電話番号など）は書き込まない・送らないでください。",
+    "誹謗中傷や、他人を傷つける内容の書き込みは削除します。",
+    "サイトの内容は予告なく変更・更新することがあります。最新版は上部のバージョン表記を確認してください。",
+    "困ったこと・問題を見つけたら『意見箱』から運営メンバーに連絡してください。"
+  ],
+  "updates": [
+    { "date": "2026-08-11", "ver": "Ver.2.0.0", "text": "サイト全面リニューアル。トップに『今日・今週』を追加、FAQ・テスト範囲を整理、スマホ表示を改善。" },
+    { "date": "2026-07-05", "ver": "Ver.1.2.0", "text": "予定ページに画像を追加。" },
+    { "date": "2026-04-26", "ver": "Ver.1.1.0", "text": "REBORN BOX / REBORN NOTE を追加。" },
+    { "date": "2026-04-22", "ver": "Ver.1.0.1", "text": "初期リリース。" }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --accent: #2f6fed;         /* blue */
+  --accent-soft: #e6efff;
+  --accent-ink: #1e46a3;
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --ink: #14161c;
+  --ink-2: #4a5163;
+  --ink-3: #8b93a6;
+  --line: #e8ebf2;
+  --line-2: #eef0f6;
+  --danger: #d94b5a;
+  --warn: #d98a2b;
+  --ok: #3a9b6d;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow-sm: 0 1px 2px rgba(20,22,28,.04), 0 1px 1px rgba(20,22,28,.03);
+  --shadow-md: 0 6px 20px rgba(20,22,28,.06), 0 2px 6px rgba(20,22,28,.04);
+  --font-sans: "Noto Sans JP", system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-display: "Zen Kaku Gothic New", "Noto Sans JP", system-ui, sans-serif;
+  --maxw: 780px;
+}
+[data-theme="dark"] {
+  --bg: #0f1116;
+  --surface: #171922;
+  --ink: #eef0f5;
+  --ink-2: #b7bccb;
+  --ink-3: #7a8095;
+  --line: #262a36;
+  --line-2: #1e2129;
+  --accent-soft: #1a2a4e;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.4);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.5);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: calc(78px + env(safe-area-inset-bottom));
+}
+a { color: var(--accent-ink); text-decoration: none; }
+button { font-family: inherit; }
+
+/* --------- App shell --------- */
+.app-header {
+  position: sticky; top: 0; z-index: 40;
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.app-header-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 12px 18px;
+  display: flex; align-items: center; gap: 12px;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: .02em;
+}
+.brand-mark {
+  width: 34px; height: 34px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent) 0%, color-mix(in oklab, var(--accent) 60%, #7aa5ff) 100%);
+  color: #fff;
+  display: grid; place-items: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0;
+  box-shadow: 0 4px 12px color-mix(in oklab, var(--accent) 40%, transparent);
+}
+.brand-sub { color: var(--ink-3); font-size: 11px; font-weight: 500; margin-top: 1px; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+
+.ver-tag {
+  margin-left: auto;
+  font-size: 11px; color: var(--ink-3);
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.search-wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 18px 12px; }
+.search {
+  width: 100%;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 0 14px 0 40px;
+  font-size: 14px;
+  color: var(--ink);
+  font-family: inherit;
+  box-shadow: var(--shadow-sm);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%238b93a6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><path d='m20 20-3.5-3.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: 14px center;
+}
+.search:focus { outline: 2px solid color-mix(in oklab, var(--accent) 30%, transparent); outline-offset: 1px; border-color: var(--accent); }
+
+main { max-width: var(--maxw); margin: 0 auto; padding: 8px 18px 32px; }
+
+/* --------- Sections --------- */
+section { scroll-margin-top: 84px; }
+.section-head {
+  display: flex; align-items: baseline; gap: 10px;
+  margin: 28px 0 12px;
+}
+.section-head h2 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: .01em;
+}
+.section-head .hint { color: var(--ink-3); font-size: 12px; }
+.section-head .rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--line), transparent);
+}
+
+/* --------- Card --------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+}
+.card + .card { margin-top: 12px; }
+.card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.card .can-do {
+  font-size: 12px;
+  color: var(--ink-3);
+  margin: -4px 0 12px;
+}
+
+/* --------- Hero: Today --------- */
+.hero {
+  background: linear-gradient(180deg, var(--accent) 0%, color-mix(in oklab, var(--accent) 78%, #1b3a7a) 100%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px color-mix(in oklab, var(--accent) 30%, transparent);
+}
+.hero::after {
+  content: "";
+  position: absolute; inset: auto -40px -60px auto;
+  width: 220px; height: 220px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.25), transparent 60%);
+  filter: blur(2px);
+  pointer-events: none;
+}
+.hero-date {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px;
+  opacity: .85;
+  letter-spacing: .04em;
+}
+.hero-date .dot { width: 6px; height: 6px; border-radius: 999px; background: #fff; opacity: .8;}
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 26px;
+  margin: 6px 0 2px;
+  letter-spacing: .01em;
+}
+.hero-note {
+  font-size: 13px; opacity: .95; margin: 8px 0 14px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,.14);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.18);
+}
+.periods {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+.period {
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 10px;
+  padding: 8px 4px;
+  text-align: center;
+  min-height: 62px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.period .n { font-size: 10px; opacity: .75; }
+.period .sub { font-weight: 700; font-size: 13px; margin-top: 2px; }
+.hero-lists {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px;
+}
+.hero-list {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 12px;
+  padding: 10px 12px;
+  min-height: 64px;
+}
+.hero-list h4 {
+  margin: 0 0 6px; font-size: 11px; opacity: .8; font-weight: 500;
+  letter-spacing: .06em; text-transform: uppercase;
+}
+.hero-list ul { list-style: none; padding: 0; margin: 0; font-size: 13px; }
+.hero-list li { padding: 2px 0; }
+.hero-list .empty { font-size: 12px; opacity: .7; }
+
+/* --------- Deadlines --------- */
+.deadlines { display: flex; flex-direction: column; gap: 10px; }
+.deadline {
+  display: flex; align-items: center; gap: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.deadline .days {
+  min-width: 56px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 1;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+.deadline .days .num { font-size: 22px; }
+.deadline .days .unit { font-size: 10px; display: block; margin-top: 2px; opacity: .8; letter-spacing: .04em; }
+.deadline.warn .days { background: #fdecd6; color: #8a4a10; }
+.deadline.hot .days { background: #fbe1e4; color: #9b1e2c; }
+.deadline .info { flex: 1; min-width: 0; }
+.deadline .title { font-weight: 700; }
+.deadline .meta { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+
+/* --------- Week --------- */
+.week {
+  display: grid; gap: 8px;
+}
+.week-range {
+  font-size: 12px; color: var(--ink-3); letter-spacing: .04em;
+}
+.week ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.week li {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 8px 10px; background: var(--line-2); border-radius: 10px;
+  font-size: 14px;
+}
+.week li::before {
+  content: ""; width: 6px; height: 6px; border-radius: 999px;
+  background: var(--accent); margin-top: 9px; flex-shrink: 0;
+}
+
+/* --------- Quick actions --------- */
+.quick {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 6px;
+}
+.quick a {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  min-height: 72px;
+  justify-content: center;
+}
+.quick a:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); border-color: color-mix(in oklab, var(--accent) 40%, var(--line)); }
+.quick .ico {
+  width: 30px; height: 30px; display: grid; place-items: center;
+  border-radius: 9px; background: var(--accent-soft); color: var(--accent-ink);
+}
+.quick .ico svg { width: 18px; height: 18px; }
+
+/* --------- Tabs (schedule) --------- */
+.tabs {
+  display: flex; gap: 4px;
+  padding: 4px;
+  background: var(--line-2);
+  border-radius: 12px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+}
+.tabs button {
+  flex: 1;
+  min-width: max-content;
+  background: transparent;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--ink-2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tabs button[aria-selected="true"] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+}
+
+.tab-panel { display: none; }
+.tab-panel[data-active="true"] { display: block; }
+
+.schedule-summary { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 6px; }
+.schedule-summary li {
+  display: grid; grid-template-columns: 92px 1fr; gap: 12px;
+  padding: 10px 12px;
+  background: var(--line-2);
+  border-radius: 10px;
+  font-size: 14px;
+}
+.schedule-summary li .d { font-weight: 700; color: var(--accent-ink); }
+
+.schedule-img {
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: var(--ink-3);
+  font-size: 12px;
+  background:
+    repeating-linear-gradient(45deg,
+      color-mix(in oklab, var(--line) 60%, transparent) 0 8px,
+      transparent 8px 16px);
+  min-height: 140px;
+  display: grid; place-items: center;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+.schedule-img img { max-width: 100%; border-radius: 8px; }
+
+.gakkatsu-list, .upcoming-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.gakkatsu-list li, .upcoming-list li {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.gakkatsu-list .name { font-weight: 700; }
+.gakkatsu-list .meta, .upcoming-list .date {
+  font-size: 12px; color: var(--ink-3); margin-top: 2px;
+  display: flex; gap: 8px; flex-wrap: wrap;
+}
+.upcoming-list li {
+  display: grid; grid-template-columns: 110px 1fr; gap: 12px; align-items: center;
+}
+.upcoming-list .date { color: var(--accent-ink); font-weight: 700; font-size: 13px; margin: 0; }
+
+/* --------- Tests --------- */
+.test-period {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--accent-ink);
+  background: var(--accent-soft);
+  padding: 6px 10px; border-radius: 999px;
+  margin-bottom: 12px;
+}
+.subjects { display: grid; gap: 8px; }
+details.subject {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+}
+details.subject summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700;
+}
+details.subject summary::-webkit-details-marker { display: none; }
+details.subject summary::after {
+  content: "";
+  width: 10px; height: 10px;
+  border-right: 2px solid var(--ink-3);
+  border-bottom: 2px solid var(--ink-3);
+  transform: rotate(45deg);
+  margin-left: auto;
+  transition: transform .2s;
+}
+details.subject[open] summary::after { transform: rotate(-135deg); }
+details.subject .body {
+  padding: 4px 14px 14px;
+  border-top: 1px solid var(--line-2);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+details.subject .tip {
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  border-radius: 8px;
+  font-size: 13px;
+}
+.subject-chip {
+  width: 32px; height: 32px;
+  border-radius: 9px;
+  display: grid; place-items: center;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.subject-chip[data-c="国語"] { background: #fde7e7; color: #9b2c2c; }
+.subject-chip[data-c="数学"] { background: #e0efff; color: #1e46a3; }
+.subject-chip[data-c="英語"] { background: #fff2d6; color: #8a5a10; }
+.subject-chip[data-c="理科"] { background: #dff3e4; color: #1f6d43; }
+.subject-chip[data-c="社会"] { background: #f2e6ff; color: #5a2ca0; }
+.subject-chip[data-c="保体"] { background: #ffe4ec; color: #a02454; }
+.subject-chip[data-c="技家"] { background: #fbeddc; color: #8a4a10; }
+.subject-chip[data-c="音楽"] { background: #e1f0f5; color: #1a5a75; }
+
+/* --------- FAQ --------- */
+.faq-cats {
+  display: flex; gap: 6px; overflow-x: auto; margin: -4px 0 12px;
+  padding: 4px 0;
+}
+.faq-cats button {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.faq-cats button[aria-pressed="true"] {
+  background: var(--ink); color: var(--surface); border-color: var(--ink);
+}
+.faqs { display: grid; gap: 8px; }
+details.faq {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+details.faq summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+}
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::before {
+  content: "Q";
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  border-radius: 6px;
+  padding: 1px 7px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+details.faq .a {
+  padding: 4px 14px 14px 40px;
+  color: var(--ink-2);
+  font-size: 14px;
+  border-top: 1px solid var(--line-2);
+}
+details.faq .a::before {
+  content: "A ";
+  color: var(--ok);
+  font-family: var(--font-display);
+  font-weight: 900;
+  margin-right: 4px;
+}
+.faq-empty { padding: 20px; text-align: center; color: var(--ink-3); font-size: 13px; }
+
+/* --------- Forms (send to) --------- */
+.forms-grid {
+  display: grid; gap: 10px;
+  grid-template-columns: 1fr;
+}
+.form-card {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.form-card:hover { transform: translateY(-1px); border-color: color-mix(in oklab, var(--accent) 40%, var(--line)); }
+.form-card .icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  display: grid; place-items: center;
+  flex-shrink: 0;
+}
+.form-card .icon svg { width: 22px; height: 22px; }
+.form-card[data-kind="opinion"] .icon { background: #fbe1e4; color: #9b1e2c; }
+.form-card[data-kind="question"] .icon { background: #e0efff; color: #1e46a3; }
+.form-card[data-kind="feature"] .icon { background: #dff3e4; color: #1f6d43; }
+.form-card .body { flex: 1; min-width: 0; }
+.form-card .title { font-family: var(--font-display); font-weight: 700; font-size: 16px; margin: 0; }
+.form-card .when { font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+.form-card .arrow { color: var(--ink-3); margin-left: auto; align-self: center; }
+
+/* --------- Others --------- */
+.others-list { display: grid; gap: 8px; }
+.others-list a {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+}
+.others-list .title { font-weight: 700; font-size: 14px; }
+.others-list .desc { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+.others-list .arrow { margin-left: auto; color: var(--ink-3); }
+
+/* --------- Updates --------- */
+.updates { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.updates li {
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 14px;
+}
+.updates .meta {
+  font-size: 11px; color: var(--ink-3);
+  display: flex; gap: 8px; align-items: center; margin-bottom: 4px;
+}
+.updates .ver {
+  color: var(--accent-ink); background: var(--accent-soft);
+  padding: 1px 6px; border-radius: 6px; font-weight: 700;
+  font-size: 10px; letter-spacing: .02em;
+}
+
+/* --------- Policy --------- */
+.policy-list { padding-left: 20px; margin: 0; color: var(--ink-2); font-size: 13px; }
+.policy-list li { padding: 4px 0; }
+
+/* --------- Footer --------- */
+footer {
+  max-width: var(--maxw);
+  margin: 32px auto 0;
+  padding: 24px 18px 32px;
+  color: var(--ink-3);
+  font-size: 12px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+/* --------- Bottom tab bar (mobile) --------- */
+.tabbar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 50;
+  background: color-mix(in oklab, var(--surface) 96%, transparent);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-top: 1px solid var(--line);
+  padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+}
+.tabbar-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  padding: 0 8px;
+}
+.tabbar a {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: 6px 4px;
+  color: var(--ink-3);
+  font-size: 10.5px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.tabbar a svg { width: 22px; height: 22px; }
+.tabbar a.active { color: var(--accent); }
+.tabbar a:active { background: var(--line-2); }
+
+/* --------- Tweaks panel styling override (very small) --------- */
+.tweaks-btn {
+  position: fixed;
+  right: 14px;
+  bottom: calc(78px + env(safe-area-inset-bottom) + 8px);
+  z-index: 45;
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+  display: grid; place-items: center;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.tweaks-btn:hover { color: var(--ink); }
+
+/* --------- Utilities --------- */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 520px) {
+  .two-col { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 22px; }
+  .periods { grid-template-columns: repeat(6, 1fr); }
+  .period { min-height: 54px; padding: 6px 2px; }
+  .period .sub { font-size: 12px; }
+  .upcoming-list li { grid-template-columns: 96px 1fr; }
+  .quick { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 720px) {
+  .forms-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .quick { grid-template-columns: repeat(4, 1fr); max-width: 520px; }
+  body { padding-bottom: 40px; }
+  .tabbar { display: none; }
+  .tweaks-btn { bottom: 20px; }
+}
+
+/* Hidden helper */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* Section highlight when scrolled to */
+:target > .section-head h2 { color: var(--accent); transition: color .3s; }
+</style>
+</head>
+<body data-theme="light">
+
+<!-- ===================== Header ===================== -->
+<header class="app-header" data-screen-label="Header">
+  <div class="app-header-inner">
+    <div class="brand">
+      <div class="brand-mark">2B</div>
+      <div class="brand-text">
+        <span>2年B組</span>
+        <span class="brand-sub" id="school-name">静岡大学教育学部附属静岡中学校</span>
+      </div>
+    </div>
+    <span class="ver-tag" id="ver-tag">Ver.2.0.0</span>
+  </div>
+  <div class="search-wrap">
+    <input class="search" id="global-search" type="search" placeholder="サイト内を検索（例:テスト範囲、意見箱、文化祭）" aria-label="サイト内検索" />
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== Hero: Today ===================== -->
+  <section id="today" data-screen-label="01 今日">
+    <div class="hero">
+      <div class="hero-date">
+        <span class="dot"></span>
+        <span id="today-label">今日</span>
+      </div>
+      <h1 id="today-heading">今日の2B</h1>
+      <div class="hero-note" id="today-note">読み込み中…</div>
+
+      <div class="periods" id="periods"></div>
+
+      <div class="hero-lists">
+        <div class="hero-list">
+          <h4>持ち物</h4>
+          <ul id="today-bring"></ul>
+        </div>
+        <div class="hero-list">
+          <h4>提出物</h4>
+          <ul id="today-submit"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Quick actions ===================== -->
+  <div class="quick" role="navigation" aria-label="クイックアクセス">
+    <a href="#schedule">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </span>
+      <span>予定</span>
+    </a>
+    <a href="#tests">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a3 3 0 0 1 3 3v13"/><path d="M4 4v14a2 2 0 0 0 2 2h14"/><path d="M8 8h6M8 12h8"/></svg>
+      </span>
+      <span>テスト範囲</span>
+    </a>
+    <a href="#faq">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg>
+      </span>
+      <span>FAQ</span>
+    </a>
+    <a href="#send">
+      <span class="ico">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-11 11"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+      </span>
+      <span>送る</span>
+    </a>
+  </div>
+
+  <!-- ===================== Deadlines ===================== -->
+  <section id="deadlines" data-screen-label="02 締切">
+    <div class="section-head">
+      <h2>直近の締切</h2>
+      <span class="hint">忘れちゃダメなやつ</span>
+      <span class="rule"></span>
+    </div>
+    <div class="deadlines" id="deadlines-list"></div>
+  </section>
+
+  <!-- ===================== Week ===================== -->
+  <section id="week" data-screen-label="03 今週">
+    <div class="section-head">
+      <h2>今週の要点</h2>
+      <span class="hint">ざっくり</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card week">
+      <div class="week-range" id="week-range"></div>
+      <ul id="week-list"></ul>
+    </div>
+  </section>
+
+  <!-- ===================== Schedule ===================== -->
+  <section id="schedule" data-screen-label="04 予定">
+    <div class="section-head">
+      <h2>予定</h2>
+      <span class="hint">2B予定・学活・今後</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card">
+      <p class="can-do">このページでできること:2Bの予定表を見る／学活の時間を使いたい人を確認する／今後の大きな予定を先読みする</p>
+
+      <div class="tabs" role="tablist" aria-label="予定タブ">
+        <button role="tab" data-tab="sch-2b"       aria-selected="true">2B予定</button>
+        <button role="tab" data-tab="sch-gakkatsu" aria-selected="false">学活を使いたい人</button>
+        <button role="tab" data-tab="sch-upcoming" aria-selected="false">今後の予定</button>
+      </div>
+
+      <div class="tab-panel" id="sch-2b" data-active="true">
+        <div class="schedule-img" id="schedule-image">
+          [予定表の画像プレースホルダー]
+        </div>
+        <ul class="schedule-summary" id="schedule-summary"></ul>
+      </div>
+
+      <div class="tab-panel" id="sch-gakkatsu">
+        <p style="font-size:12px;color:var(--ink-3);margin:0 0 10px">学活の時間を使いたい人の一覧。被らないように確認してから担当に声かけを。</p>
+        <ul class="gakkatsu-list" id="gakkatsu-list"></ul>
+      </div>
+
+      <div class="tab-panel" id="sch-upcoming">
+        <ul class="upcoming-list" id="upcoming-list"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Tests ===================== -->
+  <section id="tests" data-screen-label="05 テスト範囲">
+    <div class="section-head">
+      <h2>テスト範囲</h2>
+      <span class="hint">教科ごと</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card">
+      <p class="can-do">このページでできること:前期末テストの範囲を教科別に確認／勉強のヒントもチラ見できます。</p>
+      <div>
+        <span class="test-period" id="test-period">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span id="test-period-label"></span>
+        </span>
+      </div>
+      <div class="subjects" id="subjects"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" data-screen-label="06 FAQ">
+    <div class="section-head">
+      <h2>みんなの質問と答え</h2>
+      <span class="hint">FAQ</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card">
+      <p class="can-do">このページでできること:先生や運営メンバーへの質問の回答を検索／カテゴリで絞り込み。</p>
+      <div class="faq-cats" id="faq-cats"></div>
+      <div class="faqs" id="faqs"></div>
+    </div>
+  </section>
+
+  <!-- ===================== Send (Forms) ===================== -->
+  <section id="send" data-screen-label="07 送る">
+    <div class="section-head">
+      <h2>送る</h2>
+      <span class="hint">意見・質問・アイデア</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card">
+      <p class="can-do">このページでできること:「どんな時に何を送るか」で使い分けます。全部匿名でOK。</p>
+      <div class="forms-grid">
+
+        <a class="form-card" data-kind="opinion" id="form-opinion" href="#">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.17L4 17.17z"/></svg>
+          </span>
+          <div class="body">
+            <p class="title">意見箱</p>
+            <p class="when" id="form-opinion-when"></p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="form-card" data-kind="question" id="form-question" href="#">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg>
+          </span>
+          <div class="body">
+            <p class="title">質問フォーム</p>
+            <p class="when" id="form-question-when"></p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="form-card" data-kind="feature" id="form-feature" href="#">
+          <span class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg>
+          </span>
+          <div class="body">
+            <p class="title">新機能募集</p>
+            <p class="when" id="form-feature-when"></p>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Others ===================== -->
+  <section id="others" data-screen-label="08 その他">
+    <div class="section-head">
+      <h2>その他</h2>
+      <span class="hint">目標・委員会・ポリシー</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card">
+      <div class="others-list" id="others-list"></div>
+    </div>
+  </section>
+
+  <!-- ===================== Updates ===================== -->
+  <section id="updates" data-screen-label="09 更新履歴">
+    <div class="section-head">
+      <h2>更新履歴</h2>
+      <span class="hint">なにが変わった？</span>
+      <span class="rule"></span>
+    </div>
+    <ul class="updates" id="updates-list"></ul>
+  </section>
+
+  <!-- ===================== Policy ===================== -->
+  <section id="site-policy" data-screen-label="10 サイトポリシー">
+    <div class="section-head">
+      <h2>サイトポリシー</h2>
+      <span class="hint">使い方のやくそく</span>
+      <span class="rule"></span>
+    </div>
+    <div class="card">
+      <ol class="policy-list" id="policy-list"></ol>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>2年B組 クラスサイト</div>
+  <div style="margin-top:4px">Made by 2B / 更新:<span id="footer-updated"></span></div>
+</footer>
+
+<!-- ===================== Bottom Tab Bar ===================== -->
+<nav class="tabbar" id="tabbar" aria-label="下部ナビゲーション">
+  <div class="tabbar-inner">
+    <a href="#today" data-target="today">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 12 4l9 8"/><path d="M5 10v10h14V10"/></svg>
+      <span>今日</span>
+    </a>
+    <a href="#schedule" data-target="schedule">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      <span>予定</span>
+    </a>
+    <a href="#tests" data-target="tests">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h13a3 3 0 0 1 3 3v13"/><path d="M4 4v14a2 2 0 0 0 2 2h14"/><path d="M8 8h6M8 12h8"/></svg>
+      <span>テスト</span>
+    </a>
+    <a href="#faq" data-target="faq">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2-3 4"/><circle cx="12" cy="17" r=".5" fill="currentColor"/></svg>
+      <span>FAQ</span>
+    </a>
+    <a href="#send" data-target="send">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-11 11"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+      <span>送る</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Tweaks button -->
+<button class="tweaks-btn" id="tweaks-btn" title="表示設定" aria-label="表示設定を開く">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+</button>
+
+<!-- Tweaks panel container -->
+<div id="tweaks-root"></div>
+
+<script>
+/* ==================================================================
+   Render logic
+   ================================================================== */
+(function () {
+  const DATA = JSON.parse(document.getElementById('site-data').textContent);
+  const $  = (sel, root=document) => root.querySelector(sel);
+  const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+  // ---- Meta
+  $('#school-name').textContent = DATA.meta.schoolName;
+  $('#ver-tag').textContent = DATA.meta.version;
+  $('#today-label').textContent = DATA.meta.todayLabel + ' の 2B';
+  $('#footer-updated').textContent = DATA.meta.updatedAt;
+
+  // ---- Today
+  $('#today-note').textContent = DATA.today.note || '';
+  const periodsEl = $('#periods');
+  periodsEl.innerHTML = '';
+  DATA.today.period.forEach(p => {
+    const el = document.createElement('div');
+    el.className = 'period';
+    el.innerHTML = `<span class="n">${p.n}限</span><span class="sub">${escapeHtml(p.subject || '—')}</span>`;
+    periodsEl.appendChild(el);
+  });
+  fillList('#today-bring', DATA.today.bring, '今日はなし');
+  fillList('#today-submit', DATA.today.submit, '今日はなし');
+
+  function fillList(sel, arr, empty) {
+    const ul = $(sel);
+    ul.innerHTML = '';
+    if (!arr || arr.length === 0) {
+      const li = document.createElement('li');
+      li.className = 'empty';
+      li.textContent = empty;
+      ul.appendChild(li);
+      return;
+    }
+    arr.forEach(t => {
+      const li = document.createElement('li');
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+  }
+
+  // ---- Deadlines
+  const deadlinesEl = $('#deadlines-list');
+  deadlinesEl.innerHTML = '';
+  const now = new Date();
+  DATA.deadlines.forEach(d => {
+    const target = new Date(d.date + 'T00:00:00');
+    const days = Math.ceil((target - now) / (1000*60*60*24));
+    let cls = '';
+    if (days <= 3) cls = 'hot';
+    else if (days <= 7) cls = 'warn';
+    const numLabel = days < 0
+      ? `<span class="num">終了</span>`
+      : days === 0
+        ? `<span class="num">本日</span>`
+        : `<span class="num">${days}</span><span class="unit">日後</span>`;
+    const el = document.createElement('div');
+    el.className = `deadline ${cls}`;
+    el.innerHTML = `
+      <div class="days">${numLabel}</div>
+      <div class="info">
+        <div class="title">${escapeHtml(d.title)}</div>
+        <div class="meta">${formatDateJa(d.date)}${d.note ? ' ・ ' + escapeHtml(d.note) : ''}</div>
+      </div>
+    `;
+    deadlinesEl.appendChild(el);
+  });
+
+  // ---- Week
+  $('#week-range').textContent = DATA.thisWeek.range;
+  const weekList = $('#week-list');
+  weekList.innerHTML = '';
+  DATA.thisWeek.highlights.forEach(t => {
+    const li = document.createElement('li');
+    li.textContent = t;
+    weekList.appendChild(li);
+  });
+
+  // ---- Schedule tabs
+  const scheduleImg = $('#schedule-image');
+  if (DATA.schedule.images && DATA.schedule.images[0] && DATA.schedule.images[0].src) {
+    const img = DATA.schedule.images[0];
+    scheduleImg.innerHTML = `<div><img src="${img.src}" alt="${escapeHtml(img.caption||'')}"><div style="margin-top:8px">${escapeHtml(img.caption||'')}</div></div>`;
+  } else {
+    scheduleImg.innerHTML = `<div>[ 予定表の画像はここに ]<br><span style="font-size:11px">site-data → schedule.images[0].src を差し替え</span></div>`;
+  }
+
+  const summaryEl = $('#schedule-summary');
+  summaryEl.innerHTML = '';
+  DATA.schedule.summary.forEach(row => {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="d">${escapeHtml(row.date)}</span><span>${escapeHtml(row.text)}</span>`;
+    summaryEl.appendChild(li);
+  });
+
+  const gakkatsuEl = $('#gakkatsu-list');
+  gakkatsuEl.innerHTML = '';
+  DATA.gakkatsu.forEach(g => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <div class="name">${escapeHtml(g.name)}</div>
+      <div style="font-size:13px;color:var(--ink-2);margin-top:2px">${escapeHtml(g.purpose)}</div>
+      <div class="meta"><span>希望時期:${escapeHtml(g.when)}</span><span>目安:${g.minutes}分</span></div>
+    `;
+    gakkatsuEl.appendChild(li);
+  });
+
+  const upcomingEl = $('#upcoming-list');
+  upcomingEl.innerHTML = '';
+  DATA.upcoming.forEach(u => {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="date">${escapeHtml(u.date)}</span><span>${escapeHtml(u.title)}</span>`;
+    upcomingEl.appendChild(li);
+  });
+
+  // Tab switching
+  $$('.tabs button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      $$('.tabs button').forEach(b => b.setAttribute('aria-selected', b === btn ? 'true' : 'false'));
+      $$('.tab-panel').forEach(p => p.setAttribute('data-active', p.id === target ? 'true' : 'false'));
+    });
+  });
+
+  // ---- Tests
+  $('#test-period-label').textContent = `${DATA.tests.name}:${DATA.tests.period}`;
+  const subjectsEl = $('#subjects');
+  subjectsEl.innerHTML = '';
+  DATA.tests.subjects.forEach(s => {
+    const det = document.createElement('details');
+    det.className = 'subject';
+    det.innerHTML = `
+      <summary>
+        <span class="subject-chip" data-c="${escapeHtml(s.subject)}">${escapeHtml(s.subject.charAt(0))}</span>
+        <span>${escapeHtml(s.subject)}</span>
+        <span style="margin-left:8px;font-weight:500;font-size:12px;color:var(--ink-3)">${escapeHtml(s.teacher || '')}</span>
+      </summary>
+      <div class="body">
+        ${escapeHtml(s.range)}
+        ${s.tip ? `<div class="tip">💡 ${escapeHtml(s.tip)}</div>` : ''}
+      </div>
+    `;
+    subjectsEl.appendChild(det);
+  });
+
+  // ---- FAQ
+  const cats = ['すべて', ...Array.from(new Set(DATA.faqs.map(f => f.category)))];
+  const catsEl = $('#faq-cats');
+  catsEl.innerHTML = '';
+  cats.forEach((c, i) => {
+    const b = document.createElement('button');
+    b.textContent = c;
+    b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+    b.dataset.cat = c;
+    b.addEventListener('click', () => {
+      $$('.faq-cats button').forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+      renderFaqs();
+    });
+    catsEl.appendChild(b);
+  });
+  const faqsEl = $('#faqs');
+  function renderFaqs() {
+    const activeCat = $('.faq-cats button[aria-pressed="true"]')?.dataset.cat || 'すべて';
+    const q = ($('#global-search').value || '').trim().toLowerCase();
+    const filtered = DATA.faqs.filter(f => {
+      const okCat = activeCat === 'すべて' || f.category === activeCat;
+      const okQ = !q || (f.q + ' ' + f.a + ' ' + f.category).toLowerCase().includes(q);
+      return okCat && okQ;
+    });
+    faqsEl.innerHTML = '';
+    if (filtered.length === 0) {
+      faqsEl.innerHTML = `<div class="faq-empty">該当する質問が見つかりません</div>`;
+      return;
+    }
+    filtered.forEach(f => {
+      const det = document.createElement('details');
+      det.className = 'faq';
+      det.innerHTML = `
+        <summary><span>${escapeHtml(f.q)}</span></summary>
+        <div class="a">${escapeHtml(f.a)}</div>
+      `;
+      faqsEl.appendChild(det);
+    });
+  }
+  renderFaqs();
+
+  // ---- Global search reruns FAQ filter and highlights sections
+  $('#global-search').addEventListener('input', () => {
+    renderFaqs();
+    // if searching, jump to FAQ section
+    const q = $('#global-search').value.trim();
+    if (q.length >= 2) {
+      const faq = document.getElementById('faq');
+      if (faq && Math.abs(faq.getBoundingClientRect().top) > window.innerHeight) {
+        history.replaceState(null, '', '#faq');
+      }
+    }
+  });
+
+  // ---- Forms
+  $('#form-opinion').href = DATA.forms.opinion.url;
+  $('#form-opinion-when').textContent = DATA.forms.opinion.when;
+  $('#form-question').href = DATA.forms.question.url;
+  $('#form-question-when').textContent = DATA.forms.question.when;
+  $('#form-feature').href = DATA.forms.feature.url;
+  $('#form-feature-when').textContent = DATA.forms.feature.when;
+
+  // ---- Others
+  const othersEl = $('#others-list');
+  othersEl.innerHTML = '';
+  DATA.others.forEach(o => {
+    const a = document.createElement('a');
+    a.href = o.url;
+    a.innerHTML = `
+      <div>
+        <div class="title">${escapeHtml(o.title)}</div>
+        <div class="desc">${escapeHtml(o.desc)}</div>
+      </div>
+      <span class="arrow">→</span>
+    `;
+    othersEl.appendChild(a);
+  });
+
+  // ---- Updates
+  const updatesEl = $('#updates-list');
+  updatesEl.innerHTML = '';
+  DATA.updates.forEach(u => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <div class="meta"><span class="ver">${escapeHtml(u.ver)}</span><span>${formatDateJa(u.date)}</span></div>
+      <div>${escapeHtml(u.text)}</div>
+    `;
+    updatesEl.appendChild(li);
+  });
+
+  // ---- Policy
+  const policyEl = $('#policy-list');
+  policyEl.innerHTML = '';
+  DATA.policy.forEach(p => {
+    const li = document.createElement('li');
+    li.textContent = p;
+    policyEl.appendChild(li);
+  });
+
+  // ---- Bottom tab active state
+  const sections = ['today', 'schedule', 'tests', 'faq', 'send'];
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        $$('.tabbar a').forEach(a => a.classList.toggle('active', a.dataset.target === id));
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) io.observe(el);
+  });
+
+  // ---- Helpers
+  function escapeHtml(str) {
+    return String(str)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+  function formatDateJa(iso) {
+    if (!iso) return '';
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d)) return iso;
+    const w = ['日','月','火','水','木','金','土'][d.getDay()];
+    return `${d.getMonth()+1}月${d.getDate()}日（${w}）`;
+  }
+})();
+
+/* ==================================================================
+   Tweaks (color theme, dark mode, tabbar visibility)
+   ================================================================== */
+(function () {
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "accent": "#2f6fed",
+    "dark": false,
+    "showTabbar": true,
+    "compactToday": false
+  }/*EDITMODE-END*/;
+
+  const state = { ...TWEAK_DEFAULTS };
+  try {
+    const saved = localStorage.getItem('2b-tweaks');
+    if (saved) Object.assign(state, JSON.parse(saved));
+  } catch(e){}
+
+  const ACCENTS = [
+    { name: '青',       color: '#2f6fed', soft: '#e6efff', ink: '#1e46a3' },
+    { name: '緑',       color: '#2f9f6a', soft: '#dff3e4', ink: '#186a45' },
+    { name: 'オレンジ', color: '#e07a2c', soft: '#fbe5cf', ink: '#8a4110' },
+    { name: '紫',       color: '#7a4bd3', soft: '#ece0ff', ink: '#4a2596' },
+    { name: 'モノトーン', color: '#1c2231', soft: '#e9ecf3', ink: '#0d121f' }
+  ];
+
+  function apply() {
+    const a = ACCENTS.find(x => x.color === state.accent) || ACCENTS[0];
+    document.documentElement.style.setProperty('--accent', a.color);
+    document.documentElement.style.setProperty('--accent-soft', a.soft);
+    document.documentElement.style.setProperty('--accent-ink', a.ink);
+    document.body.setAttribute('data-theme', state.dark ? 'dark' : 'light');
+    document.getElementById('tabbar').style.display = state.showTabbar ? '' : 'none';
+    document.body.style.paddingBottom = state.showTabbar ? '' : '32px';
+    // Compact today
+    document.querySelector('#today .hero-lists').style.display = state.compactToday ? 'none' : '';
+    document.querySelector('#today .periods').style.display = state.compactToday ? 'none' : '';
+  }
+  apply();
+
+  function save() {
+    try { localStorage.setItem('2b-tweaks', JSON.stringify(state)); } catch(e){}
+  }
+
+  // Panel UI
+  const root = document.getElementById('tweaks-root');
+  function openPanel() {
+    root.innerHTML = `
+      <div class="tw-overlay">
+        <div class="tw-panel" role="dialog" aria-label="表示設定">
+          <div class="tw-head">
+            <strong>表示設定</strong>
+            <button class="tw-close" aria-label="閉じる">×</button>
+          </div>
+          <div class="tw-body">
+            <div class="tw-row">
+              <label>アクセントカラー</label>
+              <div class="tw-swatches">
+                ${ACCENTS.map(a => `
+                  <button class="tw-swatch${state.accent===a.color?' on':''}" data-color="${a.color}" title="${a.name}" style="background:${a.color}"><span>${a.name}</span></button>
+                `).join('')}
+              </div>
+            </div>
+            <div class="tw-row">
+              <label>ダークモード</label>
+              <label class="tw-toggle">
+                <input type="checkbox" id="tw-dark" ${state.dark ? 'checked':''}>
+                <span></span>
+              </label>
+            </div>
+            <div class="tw-row">
+              <label>下部タブバーを表示</label>
+              <label class="tw-toggle">
+                <input type="checkbox" id="tw-tab" ${state.showTabbar ? 'checked':''}>
+                <span></span>
+              </label>
+            </div>
+            <div class="tw-row">
+              <label>今日ブロックをコンパクトに</label>
+              <label class="tw-toggle">
+                <input type="checkbox" id="tw-comp" ${state.compactToday ? 'checked':''}>
+                <span></span>
+              </label>
+            </div>
+            <div class="tw-hint">設定はこの端末のブラウザに保存されます。</div>
+          </div>
+        </div>
+      </div>
+    `;
+    root.querySelector('.tw-close').onclick = closePanel;
+    root.querySelector('.tw-overlay').addEventListener('click', (e) => {
+      if (e.target.classList.contains('tw-overlay')) closePanel();
+    });
+    root.querySelectorAll('.tw-swatch').forEach(b => {
+      b.onclick = () => { state.accent = b.dataset.color; save(); apply(); openPanel(); };
+    });
+    root.querySelector('#tw-dark').onchange = e => { state.dark = e.target.checked; save(); apply(); };
+    root.querySelector('#tw-tab').onchange = e => { state.showTabbar = e.target.checked; save(); apply(); };
+    root.querySelector('#tw-comp').onchange = e => { state.compactToday = e.target.checked; save(); apply(); };
+  }
+  function closePanel() { root.innerHTML = ''; }
+  document.getElementById('tweaks-btn').onclick = openPanel;
+})();
+</script>
+
+<style>
+/* ---- Tweaks Panel (inline) ---- */
+.tw-overlay {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(20,22,28,.4);
+  display: grid; align-items: end; justify-items: center;
+}
+.tw-panel {
+  width: min(420px, 100%);
+  background: var(--surface);
+  border-radius: 20px 20px 0 0;
+  padding: 0;
+  max-height: 90vh;
+  overflow: auto;
+  animation: tw-in .22s ease;
+}
+@keyframes tw-in { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.tw-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+.tw-close {
+  background: transparent; border: 0; font-size: 22px;
+  color: var(--ink-3); cursor: pointer; line-height: 1; padding: 4px 8px;
+}
+.tw-body { padding: 6px 18px 24px; }
+.tw-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-2);
+  gap: 12px;
+}
+.tw-row:last-of-type { border-bottom: 0; }
+.tw-row label { font-size: 14px; font-weight: 500; }
+.tw-swatches { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.tw-swatch {
+  border: 2px solid transparent;
+  color: #fff;
+  width: 54px; height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+.tw-swatch.on { border-color: var(--ink); outline: 2px solid var(--surface); outline-offset: -4px; }
+.tw-toggle { position: relative; display: inline-block; width: 44px; height: 26px; }
+.tw-toggle input { opacity: 0; width: 0; height: 0; }
+.tw-toggle span {
+  position: absolute; inset: 0;
+  background: var(--line);
+  border-radius: 999px;
+  transition: .2s;
+}
+.tw-toggle span::before {
+  content: ""; position: absolute; left: 3px; top: 3px;
+  width: 20px; height: 20px; background: #fff;
+  border-radius: 999px; transition: .2s;
+  box-shadow: var(--shadow-sm);
+}
+.tw-toggle input:checked + span { background: var(--accent); }
+.tw-toggle input:checked + span::before { transform: translateX(18px); }
+.tw-hint { color: var(--ink-3); font-size: 12px; padding-top: 10px; }
+</style>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
