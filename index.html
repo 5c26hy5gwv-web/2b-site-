@@ -30,9 +30,8 @@
   "meta": {
     "className": "2Bサイト",
     "schoolName": "静岡大学教育学部附属静岡中学校",
-    "version": "Ver.2.0.5",
-    "updatedAt": "2026-08-11",
-    "todayLabel": "8月12日（水）"
+    "version": "Ver.2.0.8",
+    "updatedAt": "2026-08-11"
   },
   "today": {
     "note": "夏休み中は時間割はお休みモードです。8月27日に更新します。",
@@ -217,8 +216,29 @@
       "url": "#site-policy"
     }
   ],
-  "policy": [],
+  "policy": [
+    "このサイトは 2Bサイト（2年B組） です。掲載情報は運営メンバーが管理しています。",
+    "個人が特定される情報（フルネーム・住所・電話番号など）は書き込まない・送らないでください。",
+    "誹謗中傷や、他人を傷つける内容の書き込みは削除します。",
+    "サイトの内容は予告なく変更・更新することがあります。最新版は上部のバージョン表記を確認してください。",
+    "困ったこと・問題を見つけたら『意見箱』から運営メンバーに連絡してください。"
+  ],
   "updates": [
+    {
+      "date": "2026-08-11",
+      "ver": "Ver.2.0.8",
+      "text": "サイトポリシーの本文を復旧（前回Manus作業で空になっていた）。"
+    },
+    {
+      "date": "2026-08-11",
+      "ver": "Ver.2.0.7",
+      "text": "ヒーロー日付の自動切り替えを安全な形で再実装（8/27までは「今日の2B」、以降は「明日の2B」。0時に自動更新）。"
+    },
+    {
+      "date": "2026-08-11",
+      "ver": "Ver.2.0.6",
+      "text": "読み込み中のまま固まるバグを修正（JS重複宣言と不要スクリプトを削除）。"
+    },
     {
       "date": "2026-08-11",
       "ver": "Ver.2.0.5",
@@ -1226,17 +1246,40 @@ footer {
   $('#school-name').textContent = DATA.meta.schoolName;
   $('#ver-tag').textContent = DATA.meta.version;
   
-  // ---- Dynamic Date Calculation
-  const now = new Date();
-  const targetDate = new Date();
-  // 8月27日までは今日の日付、それ以降は明日の日付を表示
-  if (now > new Date('2026-08-27T00:00:00')) {
-    targetDate.setDate(now.getDate() + 1);
-    $('#today-heading').textContent = '明日の2B';
-  } else {
-    $('#today-heading').textContent = '今日の2B';
+  // ---- Hero heading & date label（動的計算：0時に自動で切り替わる）
+  // ルール:
+  //   ・毎日「明日の2B」表示（明日の日付ラベル）
+  //   ・ただし 2026-08-27 が明日にあたる日（=8/26）までは
+  //     "明日"扱いだが、それより前（8月休み期間）は「明日の2B」でよい
+  //   ・8/27 の日付が過ぎたら（=登校日以降は）翌日の日付を出す通常運用
+  //   → 実質「常に翌日の日付を表示」でOKだが、
+  //     ユーザー要望は「8/27までは今日の日付、以降は翌日」なので下記に従う
+  function renderHeroDate(){
+    const heroDate = new Date();
+    // 2026-08-27 より後（>）は翌日、それ以外（8/27当日含む）は今日を表示
+    const switchDate = new Date('2026-08-27T00:00:00');
+    let showDate;
+    if (heroDate > switchDate) {
+      showDate = new Date(heroDate);
+      showDate.setDate(heroDate.getDate() + 1);
+      $('#today-heading').textContent = '明日の2B';
+    } else {
+      showDate = heroDate;
+      $('#today-heading').textContent = '今日の2B';
+    }
+    const y = showDate.getFullYear();
+    const m = String(showDate.getMonth()+1).padStart(2,'0');
+    const d = String(showDate.getDate()).padStart(2,'0');
+    $('#today-label').textContent = formatDateJa(`${y}-${m}-${d}`);
   }
-  $('#today-label').textContent = formatDateJa(targetDate.toISOString().split('T')[0]);
+  renderHeroDate();
+  // 0時をまたいだら自動で再描画（サイトを開きっぱなしにしていても切り替わる）
+  (function scheduleMidnightRefresh(){
+    const nowTs = new Date();
+    const nextMidnight = new Date(nowTs.getFullYear(), nowTs.getMonth(), nowTs.getDate()+1, 0, 0, 5);
+    const ms = nextMidnight - nowTs;
+    setTimeout(() => { renderHeroDate(); scheduleMidnightRefresh(); }, ms);
+  })();
 
   $('#footer-updated').textContent = DATA.meta.updatedAt;
 
@@ -1682,7 +1725,6 @@ footer {
 .tw-hint { color: var(--ink-3); font-size: 12px; padding-top: 10px; }
 </style>
 
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
 </body>
 </html>
