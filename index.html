@@ -30,12 +30,12 @@
   "meta": {
     "className": "2Bサイト",
     "schoolName": "静岡大学教育学部附属静岡中学校",
-    "version": "Ver.2.0.5",
+    "version": "Ver.2.0.6",
     "updatedAt": "2026-08-11",
     "todayLabel": "8月12日（水）"
   },
   "today": {
-    "note": "夏休み中は時間割はお休みモードです。9月1日に更新します。",
+    "note": "夏休み中は時間割はお休みモードです。8月27日に更新します。",
     "period": [
       {
         "n": 1,
@@ -1225,7 +1225,19 @@ footer {
   // ---- Meta
   $('#school-name').textContent = DATA.meta.schoolName;
   $('#ver-tag').textContent = DATA.meta.version;
-  $('#today-label').textContent = DATA.meta.todayLabel;
+  
+  // ---- Dynamic Date Calculation
+  const now = new Date();
+  const targetDate = new Date();
+  // 8月27日までは今日の日付、それ以降は明日の日付を表示
+  if (now > new Date('2026-08-27T00:00:00')) {
+    targetDate.setDate(now.getDate() + 1);
+    $('#today-heading').textContent = '明日の2B';
+  } else {
+    $('#today-heading').textContent = '今日の2B';
+  }
+  $('#today-label').textContent = formatDateJa(targetDate.toISOString().split('T')[0]);
+
   $('#footer-updated').textContent = DATA.meta.updatedAt;
 
   // ---- Today
